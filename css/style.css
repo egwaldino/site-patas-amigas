@@ -158,7 +158,7 @@ header nav ul li a:hover {
 
 .hours {
     padding: 30px 150px;
-    width: 400px;
+    max-width: 500px;
 }
 
 table {
