@@ -1,0 +1,232 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding: none;
+    line-height: 1.6;
+    color: #1d1148;
+    background-color: #f7f7f9;
+}
+
+/*Header da página*/
+
+header {
+    display: flex;
+    padding: 0 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header-text {
+    gap: 10px;
+    display: flex;
+}
+
+header .text2 {
+    color: #e40084;
+}
+
+header nav ul {
+    gap: 20px;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    cursor: pointer;
+}
+header nav ul li a {
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #b8006a;
+    cursor: pointer;
+}
+
+/* Hero Section da página */
+
+.hero {
+    display: flex;
+    color: #f7f7f9;
+    padding: 30px 150px 80px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1d1148;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    width: 500px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.hero button {
+    border: none;
+    color: #f7f7f9;
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #e40084;
+}
+
+.hero button:hover {
+    background-color: #b8006a;
+}
+
+/*Animal Cards Section da página */
+
+.animals {
+    display: flex;
+    padding: 30px 150px;
+    flex-direction: column;
+
+
+}
+
+.animal-cards {
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: start;
+
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: 3px solid #1d1148;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.badge-novo {
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    color: #f7f7f9;
+    padding: 4px 16px;
+    font-weight: bold;
+    position: absolute;
+    border-radius: 24px;
+    background-color: #e40084;
+
+}
+
+.card img {
+    width: 270px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.card p {
+    padding: 0px 10px;
+}
+
+/*Como Adotar Section da página */
+
+.list {
+    padding: 30px 150px;
+}
+
+/*Hours Section da página */
+
+.hours {
+    padding: 30px 150px;
+    width: 400px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th {
+    color: #f7f7f9;
+    background-color: #1d1148;
+}
+
+td {
+    background-color: #fff;
+}
+
+td,
+th {
+    padding: 10px;
+    text-align: left;
+    border: #ddd;
+}
+
+/*Contact Section da página */
+
+.form {
+    width: 400px;
+    padding: 30px 150px;
+}
+
+form {
+    gap: 10px;
+    display: flex;
+    font-size: small;
+    padding: 30px 20px;
+    font-weight: bolder;
+    border-radius: 24px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form input, select, textarea {
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+}
+
+form button {
+    border: none;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    color: #f7f7f9;
+    font-weight: bold;
+    border-radius: 16px;
+    border-radius: 30px;
+    background-color: #e40084
+}
+
+form button:hover {
+    background-color: #b8006a
+}
+
+footer {
+    display: flex;
+    color: #f7f7f9;
+    justify-content: center;
+    background-color: #1d1148;
+}

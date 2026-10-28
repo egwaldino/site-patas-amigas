@@ -8,53 +8,59 @@
   </head>
   <body>
     <header>
-      <h2>Patas Amigas</h2>
+        <div class="header-text">
+            <h2 class="text1">Patas</h2>
+            <h2 class="text2">Amigas</h2>
+        </div>
       <nav>
         <ul>
-          <li>Animais</li>
-          <li>Como adotar</li>
-          <li>Visitas</li>
-          <li>Contacto</li>
+          <li><a href="/html/paginaEmConstrucao.html">Animais</a></li>
+          <li><a href="/html/paginaEmConstrucao.html">Como adotar</a></li>
+          <li><a href="/html/paginaEmConstrucao.html">Visitas</a></li>
+          <li><a href="/html/paginaEmConstrucao.html">Contacto</a></li>
         </ul>
       </div>
     </header>
 
     <main>
-            <section class="hero">
-                <h1>Dá uma casa a quem só precisa de carinho</h1>
-                <p>
-                    Somos uma associação do Porto que acolhe cães, gatos e coelhos à espera
+        <section class="hero">
+            <h1>Dá uma casa a quem só precisa de carinho</h1>
+            <p>
+            Somos uma associação do Porto que acolhe cães, gatos e coelhos à espera
             de uma família.
-        </p>
-        <buttom>Conhecer os animais</buttom>
-    </section>
+            </p>
+            <button>Conhecer os animais</button>
+        </section>
 
-    <section class="animal-cards">
+    <section class="animals">
         <h2>Animais para adoção</h2>
-        <div class="card">
-            <img src="" alt="" />
-            <h1></h1>
-            <p></p>
-        </div>
-        <div class="card">
-            <img src="" alt="" />
-            <h1></h1>
-            <p></p>
-        </div>
-        <div class="card">
-            <img src="" alt="" />
-            <h1></h1>
-            <p></p>
+        <div class="animal-cards">
+            <div id="card-1" class="card">
+                <span class="badge-novo">Novo</span>
+                <img src="/assets/img/cao.svg" alt="Imagem de um Cão" />
+                <h2>Rex</h2>
+                <p>Cão, 3 anos. Adora passear e brincar com a bola.</p>
+            </div>
+            <div class="card">
+                <img src="/assets/img/gato.svg" alt="Imagem de um Gato" />
+                <h2>Mia</h2>
+                <p>Gata, 2 anos. Tranquila, gosta de dormir ao sol.</p>
+            </div>
+            <div class="card">
+                <img src="/assets/img/coelho.svg" alt="Imagem de um Coelho" />
+                <h2>Tambor</h2>
+                <p>Coelho, 1 ano. Curioso e muito meigo.</p>
+            </div>
         </div>
     </section>
 
     <section class="list">
         <h2>Como adotar</h2>
         <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Escolhe um animal que mais combina contigo.</li>
+            <li>Preenchae o formulário de contacto.</li>
+            <li>Visita-nos para conheceres pessoalmente.</li>
+            <li>Leva o teu novo amigo para casa.</li>
         </ol>
     </section>
 
@@ -83,12 +89,12 @@
     <section class="form">
         <h2>Contacto</h2>
         
-        <form action="">
+        <form action="index.html">
             <label for="name">Name</label>
-            <input type="text" placeholder="Digite seu nome" />
+            <input id="name" name="name" type="text" placeholder="Digite seu nome" />
 
-            <label for="email">Name</label>
-            <input type="email" placeholder="Digite seu email" />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Digite seu email" required />
 
             <label for="aniamals">Animal</label>
             <select id="animals" name="animals">
@@ -98,9 +104,9 @@
             </select>
 
             <label for="message">Mensagem</label>
-            <textarea name="message" rows="10" cols="30" placeholder="Digite seu nome"></textarea>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Deixe-nos uma mensagem"></textarea>
 
-            <button onclick="alert('Enviado !')">Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
     </section>
 </main>
